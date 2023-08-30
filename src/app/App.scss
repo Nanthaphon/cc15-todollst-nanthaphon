@@ -17,3 +17,40 @@
         grid-column: 2/-1;
     }
 }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background: aquamarine;
+    height: calc(100vh - $header-height);
+}
+//Block
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    padding: 10psx;
+    border-radius: 4px;
+    cursor: pointer;
+
+        &:hover{
+            background-color: $grey-light;
+        }
+    //Element
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.8rem;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+
+
+        &__text {
+            font-weight: 400;
+    }
+}
+}
